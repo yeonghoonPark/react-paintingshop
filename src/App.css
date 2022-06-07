@@ -2,9 +2,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
 :root{
+  /* font */
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
-  color: #080707;
+  
+  /* color */
+  --color-white: #ffffff;
+  --color-black: #1b1b1b;
+  --color-gray: #6d6d6d;
+  --color-light-grey: #dfdfdf;
+
+}
+
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* HEADER */
+.header .container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.header .title{
+  font-size: 2.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid var(--color-black);
+}
+
+.header .nav{
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.header .nav span{
+  font-weight: 500;
+  background: transparent;
+  transition: 0.2s;
+}
+
+.header .nav span:hover{
+  transform: scale(1.2);
+}
+
+/* SLIDER */
+.slider .container{
+  position: relative;
+}
+.slider .title{
+  position: absolute;
+  text-indent: -9999px;
+}
+.slider .slide{
+  opacity: 0;
+  transition: 2s;
+}
+.slider .slide.active{
+  opacity: 1;
+}
+.slider .slide1, 
+.slider .slide2{
+  position: absolute;
 }
 
 
+/* PIECE */
+.piece .container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+
+
+@media screen and (max-width:1024px) {
+  
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:480px) {
+
+}
 
