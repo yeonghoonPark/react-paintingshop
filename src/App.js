@@ -1,5 +1,4 @@
 import './App.css';
-import './reset.css';
 import slide01 from './images/slide01.jpg';
 import slide02 from './images/slide02.jpg';
 import slide03 from './images/slide03.jpg';
@@ -7,7 +6,7 @@ import bannerWaterColor from './images/banner_watercolor.jpg';
 import bannerOil from './images/banner_oil.jpg';
 import hobby from './images/academy_hobby.jpg';
 import major from './images/academy_major.jpg';
-import releaseStress from './images/academy_release_stress.jpg';
+import enjoy from './images/academy_enjoy.jpg';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -78,7 +77,7 @@ function App() {
                 <p className="text">
                   Watercolor is a type of paint that you can use to solve in water, or you can paint with it, so look at a variety of watercolors.
                 </p>
-                <button className="btn btn-watercolor"><Link to="/">Enjoying Watercolor Paintings</Link></button>
+                <button className="btn btn-watercolor"><Link to="/"><span>Enjoying Watercolor</span></Link></button>
               </article>
               <article className="oil">
                 <h3 className="sub-title">Oil</h3>
@@ -88,7 +87,7 @@ function App() {
                 <p className="text">
                   It is a method loved by artists even today because it can be painted using oil-based paint, painted several times, and expressed using a unique texture of paint.
                 </p>
-                <button className="btn btn-oil"><Link to="/">Enjoying Oil Paintings</Link></button>
+                <button className="btn btn-oil"><Link to="/"><span>Enjoying Oil</span></Link></button>
               </article>
             </div>
           </section>
@@ -103,7 +102,7 @@ function App() {
                   <img src={hobby} alt="hobby" />
                 </div>
                 <p className="text">
-                  Drawing is a good hobby for you.
+                  Drawing is a good hobby for you, Let's draw a beautiful picture together.
                 </p>
               </article>
               <article className="major">
@@ -112,13 +111,13 @@ function App() {
                   <img src={major} alt="major" />
                 </div>
                 <p className="text">
-                  Show your major by learning at our academy.
+                  Improve your skills by learning at our academy, you can be an expert.
                 </p>
               </article>
-              <article className="release-stress">
-                <h3 className="sub-title">Release stress</h3>
+              <article className="enjoy">
+                <h3 className="sub-title">Enjoy</h3>
                 <div className="img-box">
-                  <img src={releaseStress} alt="release-stress" />
+                  <img src={enjoy} alt="enjoy" />
                 </div>
                 <p className="text">
                   Art relieves stress and becomes a vital part of life.
