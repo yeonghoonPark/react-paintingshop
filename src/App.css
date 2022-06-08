@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root{
   /* font */
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-weight: 500;
   
   /* color */
   --color-white: #ffffff;
@@ -12,11 +13,16 @@
   --color-gray: #6d6d6d;
   --color-light-grey: #dfdfdf;
   --color-beige: #f5f5dc;
+  --color-yellow: #fffd61;
   --color-orange: #c41c00;
 
 
   /* size */
-  --container-padding: 1.5rem;
+  --container-padding: 2rem 1.5rem;
+}
+
+span{
+  font-weight: 500;
 }
 
 /* HEADER */
@@ -39,7 +45,6 @@
 
 .header .main-title{
   font-size: 2.5rem;
-  font-weight: 500;
   border-bottom: 2px solid var(--color-black);
 }
 
@@ -50,12 +55,6 @@
   align-self: flex-end;
 }
 
-.header .nav span{
-  font-weight: 500;
-  background: transparent;
-  transition: 0.1s;
-}
-
 .header .nav span:hover{
   text-decoration: underline;
 }
@@ -63,7 +62,7 @@
 /* SLIDER */
 .slider .container{
   position: relative;
-  margin-top: 6.438em;
+  margin-top: 7.438em;
 }
 .slider .title{
   position: absolute;
@@ -79,6 +78,35 @@
 .slider .slide1, 
 .slider .slide2{
   position: absolute;
+}
+
+.slider .slide .sub-title{
+  position: absolute;
+  z-index: 50;
+  font-family: 'Lobster', 'sans-serif';
+  font-size: 2rem;
+}
+
+.slider .slide1 .sub-title {
+  right: 2rem;
+  bottom: 2rem;
+  color: var(--color-beige);
+  text-shadow: 3px 3px 3px var(--color-dark-black);
+}
+
+.slider .slide2 .sub-title {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-yellow);
+  text-shadow: 3px 3px 3px var(--color-dark-black);
+}
+
+.slider .slide3 .sub-title{
+  left: 2rem;
+  bottom: 2rem;
+  color: var(--color-white);
+  text-shadow: 3px 3px 3px var(--color-orange);
 }
 
 
@@ -103,7 +131,6 @@
 .piece .title span{
   width: 2.5em;
   margin: 0 auto;
-  font-weight: 500;
   font-size: 1.5rem;
   border-bottom: 1px solid var(--color-black);
 }
@@ -118,7 +145,6 @@
 
 .piece .watercolor .sub-title{
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -147,7 +173,6 @@
 
 .piece .oil .sub-title {
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -188,7 +213,6 @@
 .academy .title span {
   width: 2.5em;
   margin: 0 auto;
-  font-weight: 500;
   font-size: 1.5rem;
   border-bottom: 1px solid var(--color-black);
 }
@@ -196,15 +220,14 @@
 .academy .hobby {
   width: 20%;
   height: 31.25rem;
+  padding-top: 7rem;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
 }
 
 .academy .hobby .sub-title {
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -225,15 +248,14 @@
 .academy .major {
   width: 20%;
   height: 31.25rem;
+  padding-top: 7rem;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
 }
 
 .academy .major .sub-title {
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -254,15 +276,14 @@
 .academy .release-stress {
   width: 20%;
   height: 31.25rem;
+  padding-top: 7rem;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
 }
 
 .academy .release-stress .sub-title {
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -282,7 +303,6 @@
 
 /* CONTACT-US */
 .contact-us {
-  /* background: linear-gradient(180deg, #1b1b1b, #000000); */
   background: var(--color-dark-black);
   border-bottom: 1px solid var(--color-orange);
 }
@@ -305,14 +325,13 @@
 .contact-us .title span {
   width: 2.5em;
   margin: 0 auto;
-  font-weight: 500;
   font-size: 1.5rem;
   border-bottom: 1px solid var(--color-white);
 }
 
 .contact-us .customer{
   width: 20%;
-  height: 14.5rem;
+  height: 15.625rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -321,7 +340,6 @@
 
 .contact-us .customer .sub-title{
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -335,7 +353,7 @@
 
 .contact-us .about {
   width: 20%;
-  height: 14.5rem;
+  height: 15.625rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -344,7 +362,6 @@
 
 .contact-us .about .sub-title {
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -358,7 +375,7 @@
 
 .contact-us .social {
   width: 20%;
-  height: 14.5rem;
+  height: 15.625rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -367,7 +384,6 @@
 
 .contact-us .social .sub-title {
   padding: 1rem;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 

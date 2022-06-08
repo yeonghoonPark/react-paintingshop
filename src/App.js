@@ -45,20 +45,23 @@ function App() {
           <section className="slider">
             <div className="container">
               <h2 className="title">SLIDER</h2>
-                <div className="slide slide1">
+              <div className="slide slide1">
+                  <h3 className="sub-title">30% discount on Oil painting</h3>
                   <div className="img-box">
                     <img src={slide01} alt="slide01" />
                   </div>
                 </div>
                 <div className="slide slide2">
+                  <h3 className="sub-title">Learn to be happy</h3>
                   <div className="img-box">
                     <img src={slide02} alt="slide02" />
                   </div>
                 </div>
                 <div className="slide slide3 active">
-                  <div className="img-box">
+                <h3 className="sub-title">Welcome to Painting Shop</h3>
+                <div className="img-box">
                     <img src={slide03} alt="slide03" />
-                  </div>
+                </div>
                 </div>
             </div>
           </section>
@@ -73,8 +76,9 @@ function App() {
                   <img src={bannerWaterColor} alt="banner_watercolor" />
                 </div>
                 <p className="text">
-                  Watercolor paint is an ancient form of painting. In East Asia, watercolor painting with inks is referred to as brush painting or scroll painting. In Chinese, Korean and Japanese painting it has been the dominant medium, often in monochrome black or browns, often using inkstick or other pigments. India, Ethiopia and other countries have long watercolor painting traditions as well.
+                  Watercolor is a type of paint that you can use to solve in water, or you can paint with it, so look at a variety of watercolors.
                 </p>
+                <button className="btn btn-watercolor"><Link to="/">Enjoying Watercolor Paintings</Link></button>
               </article>
               <article className="oil">
                 <h3 className="sub-title">Oil</h3>
@@ -82,8 +86,9 @@ function App() {
                   <img src={bannerOil} alt="banner_oil" />
                 </div>
                 <p className="text">
-                  Oil painting is the process of painting with pigments with a medium of drying oil as the binder. It has been the most common technique for artistic painting on wood panel or canvas for several centuries, spreading from Europe to the rest of the world. The advantages of oil for painting images include "greater flexibility, richer and denser color, and a wider range from light to dark". But the process is slower, especially when one layer of paint needs to be allowed to dry before another is applied.
+                  It is a method loved by artists even today because it can be painted using oil-based paint, painted several times, and expressed using a unique texture of paint.
                 </p>
+                <button className="btn btn-oil"><Link to="/">Enjoying Oil Paintings</Link></button>
               </article>
             </div>
           </section>
@@ -98,7 +103,7 @@ function App() {
                   <img src={hobby} alt="hobby" />
                 </div>
                 <p className="text">
-                  Drawing is a good hobby for you
+                  Drawing is a good hobby for you.
                 </p>
               </article>
               <article className="major">
@@ -107,7 +112,7 @@ function App() {
                   <img src={major} alt="major" />
                 </div>
                 <p className="text">
-                  Show your major by learning at our academy
+                  Show your major by learning at our academy.
                 </p>
               </article>
               <article className="release-stress">
@@ -116,7 +121,7 @@ function App() {
                   <img src={releaseStress} alt="release-stress" />
                 </div>
                 <p className="text">
-                  Art relieves stress and becomes a vital part of life
+                  Art relieves stress and becomes a vital part of life.
                 </p>
               </article>
             </div>
