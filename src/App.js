@@ -21,7 +21,16 @@ function App() {
   //   }
   //   slide[slideCount++].classList.add('active');
   // }, 8000);
-  
+
+  let toggleActive = (event) => {
+    event.currentTarget.classList.toggle('active');
+  }
+
+  let navTmCall = (event) => {
+    let navTm = document.querySelector('.nav-tm');
+    navTm.classList.toggle('active');
+    toggleActive(event);
+  }
 
   return (
     <div className="App">
@@ -33,6 +42,16 @@ function App() {
             <div className="container">
               <h1 className="main-title"><Link to="/">PAINTING SHOP</Link></h1>
               <nav className="nav">
+                <span><Link to="/">Home</Link></span>
+                <span><Link to="/shop">Shop</Link></span>
+                <span><Link to="/notice">Notice</Link></span>
+              </nav>
+              <div className="nav-btn" onClick={navTmCall}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+              </div>
+              <nav className="nav-tm">
                 <span><Link to="/">Home</Link></span>
                 <span><Link to="/shop">Shop</Link></span>
                 <span><Link to="/notice">Notice</Link></span>
@@ -75,7 +94,8 @@ function App() {
                   <img src={bannerWaterColor} alt="banner_watercolor" />
                 </div>
                 <p className="text">
-                  Watercolor is a type of paint that you can use to solve in water, or you can paint with it, so look at a variety of watercolors.
+                  <span>Watercolor is a type of paint that you can use to solve in water, or you can paint with it, so look at a variety of watercolors.</span>
+                  <span>We have a variety of Watercolors available, so appreciate them and buy them.</span>
                 </p>
                 <button className="btn btn-watercolor"><Link to="/"><span>Enjoying Watercolor</span></Link></button>
               </article>
@@ -85,7 +105,8 @@ function App() {
                   <img src={bannerOil} alt="banner_oil" />
                 </div>
                 <p className="text">
-                  It is a method loved by artists even today because it can be painted using oil-based paint, painted several times, and expressed using a unique texture of paint.
+                  <span>It is a method loved by artists even today because it can be painted using oil-based paint, painted several times, and expressed using a unique texture of paint.</span>
+                  <span>We're offering a 30% discount on Oil paintings, so don't miss this opportunity</span>
                 </p>
                 <button className="btn btn-oil"><Link to="/"><span>Enjoying Oil</span></Link></button>
               </article>
@@ -137,7 +158,7 @@ function App() {
                   <li><Link to="/">Notice</Link></li>
                   <li><Link to="/">Terms of Service</Link></li>
                   <li><Link to="/">Privacy Policy</Link></li>
-                  <li><Link to="/">Order Delivery Inquiry</Link></li>
+                  <li><Link to="/">Order &amp; Delivery</Link></li>
                 </ul>
               </div>
               <div className="about">
@@ -162,6 +183,9 @@ function App() {
           <footer className="footer">
             <div className="container">
               <address className="address">COPYRIGHTⓒ 2022 yeonghoon-Park, All Right Reserved</address>
+              <div className="to-top">
+                <span>TOP</span>
+              </div>
             </div>
           </footer>
         </div>
