@@ -8,20 +8,25 @@ import hobby from './images/academy_hobby.jpg';
 import major from './images/academy_major.jpg';
 import enjoy from './images/academy_enjoy.jpg';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { useState , useEffect} from 'react';
 
 function App() {
-  // let slideCount = 0;
-  // setInterval(() => {
-  //   let slide = document.querySelectorAll('.slide');
-  //   slide.forEach((_item, idx) => {
-  //     slide[idx].classList.remove('active');
-  //   })
-  //   if (slideCount > 2) {
-  //     slideCount = 0;
-  //   }
-  //   slide[slideCount++].classList.add('active');
-  // }, 8000);
-
+  let [zeroCount, setZeroCount] = useState(0);
+  
+  let slideMovement = () => {
+    setInterval(() => {
+      let slide = document.querySelectorAll('.slide');
+      slide.forEach((_item, idx) => {
+        slide[idx].classList.remove('active');
+      })
+      if (zeroCount > 2) {
+        zeroCount = 0;
+      }
+      slide[zeroCount++].classList.add('active');
+    }, 8000);
+  }
+  slideMovement();
+  
   let toggleActive = (event) => {
     event.currentTarget.classList.toggle('active');
   }
@@ -32,24 +37,42 @@ function App() {
     toggleActive(event);
   }
 
-  window.addEventListener('scroll', () => {
-    let toTop = document.querySelector('.to-top');
-    if (window.pageYOffset <= 0 || window.pageYOffset <= 700) {
-      toTop.classList.remove('active');
-    } else if (window.pageYOffset > 700) {
-      toTop.classList.add('active');
-    }
-  })
+  let pageYOffsetScroll = () => {
+     window.addEventListener('scroll', () => {
+      let toTop = document.querySelector('.to-top');
+      if (window.pageYOffset <= 0 || window.pageYOffset <= 700) {
+        toTop.classList.remove('active');
+      } else if (window.pageYOffset > 700) {
+        toTop.classList.add('active');
+      }
+    });
+  }
+  pageYOffsetScroll();
+ 
+  let toTop = () => {
+    window.scrollTo({ top: 0 });
+  }
 
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="skip-menu"></div>  
+        {/* SKIP-MENU */}
+        <div className="skip-menu">
+          <div className="container">
+            <a href="#header"><span>HEADER</span></a>
+            <a href="#slider"><span>SLIDER</span></a>
+            <a href="#piece"><span>PIECE</span></a>
+            <a href="#academy"><span>ACADEMY</span></a>
+            <a href="#contact-us"><span>CONTACT-US</span></a>
+          </div>
+        </div>
+        
+        {/* WRAP */}
         <div className="wrap">
           {/* HEADER */}
           <header className="header" id="header">
             <div className="container">
-              <h1 className="main-title"><Link to="/">PAINTING SHOP</Link></h1>
+              <h1 className="main-title" onClick={toTop}>PAINTING SHOP</h1>
               <nav className="nav">
                 <span><Link to="/">Home</Link></span>
                 <span><Link to="/shop">Shop</Link></span>
@@ -73,23 +96,23 @@ function App() {
             <div className="container">
               <h2 className="title">SLIDER</h2>
               <div className="slide slide1">
-                  <h3 className="sub-title">30% discount on Oil painting</h3>
-                  <div className="img-box">
-                    <img src={slide01} alt="slide01" />
-                  </div>
+                <h3 className="sub-title">30% discount on Oil painting</h3>
+                <div className="img-box">
+                  <img src={slide01} alt="slide01" />
                 </div>
-                <div className="slide slide2">
-                  <h3 className="sub-title">Learn to be happy</h3>
-                  <div className="img-box">
-                    <img src={slide02} alt="slide02" />
-                  </div>
+              </div>
+              <div className="slide slide2">
+                <h3 className="sub-title">Learn to be happy</h3>
+                <div className="img-box">
+                  <img src={slide02} alt="slide02" />
                 </div>
-                <div className="slide slide3 active">
+              </div>
+              <div className="slide slide3 active">
                 <h3 className="sub-title">Welcome to Painting Shop</h3>
                 <div className="img-box">
-                    <img src={slide03} alt="slide03" />
+                  <img src={slide03} alt="slide03" />
                 </div>
-                </div>
+              </div>
             </div>
           </section>
           
@@ -189,16 +212,17 @@ function App() {
             </div>
           </section>
 
+          {/* FOOTER */}
           <footer className="footer" id="footer">
             <div className="container">
               <address className="address">COPYRIGHTⓒ 2022 yeonghoon-Park, All Right Reserved</address>
-              <div className="to-top active">
+              <div className="to-top" onClick={toTop}>
                 <span>TOP</span>
               </div>
             </div>
           </footer>
         </div>
-        </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }
