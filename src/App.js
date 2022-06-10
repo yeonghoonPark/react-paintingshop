@@ -32,13 +32,22 @@ function App() {
     toggleActive(event);
   }
 
+  window.addEventListener('scroll', () => {
+    let toTop = document.querySelector('.to-top');
+    if (window.pageYOffset <= 0 || window.pageYOffset <= 700) {
+      toTop.classList.remove('active');
+    } else if (window.pageYOffset > 700) {
+      toTop.classList.add('active');
+    }
+  })
+
   return (
     <div className="App">
       <BrowserRouter>
         <div className="skip-menu"></div>  
         <div className="wrap">
           {/* HEADER */}
-          <header className="header">
+          <header className="header" id="header">
             <div className="container">
               <h1 className="main-title"><Link to="/">PAINTING SHOP</Link></h1>
               <nav className="nav">
@@ -60,7 +69,7 @@ function App() {
           </header>
           
           {/* SLIDER */}
-          <section className="slider">
+          <section className="slider" id="slider">
             <div className="container">
               <h2 className="title">SLIDER</h2>
               <div className="slide slide1">
@@ -85,7 +94,7 @@ function App() {
           </section>
           
           {/* PIECE */}
-          <section className="piece">
+          <section className="piece" id="piece">
             <div className="container">
               <h2 className="title"><span>PIECE</span></h2>
               <article className="watercolor">
@@ -114,7 +123,7 @@ function App() {
           </section>
 
           {/* ACADEMY */}
-          <section className="academy">
+          <section className="academy" id="academy">
             <div className="container">
               <h2 className="title"><span>ACADEMY</span></h2>
               <article className="hobby">
@@ -148,7 +157,7 @@ function App() {
           </section>
           
           {/* CONTACT-US */}
-          <section className="contact-us">
+          <section className="contact-us" id="contact-us">
             <div className="container">
               <h2 className="title"><span>CONTACT-US</span></h2>
               <div className="customer">
@@ -180,10 +189,10 @@ function App() {
             </div>
           </section>
 
-          <footer className="footer">
+          <footer className="footer" id="footer">
             <div className="container">
               <address className="address">COPYRIGHTⓒ 2022 yeonghoon-Park, All Right Reserved</address>
-              <div className="to-top">
+              <div className="to-top active">
                 <span>TOP</span>
               </div>
             </div>
