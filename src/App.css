@@ -1,12 +1,13 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Roboto', 'Noto Sans KR', 'sans-serif';
   font-weight: 500;
   scroll-behavior: smooth;
 }
@@ -278,7 +279,7 @@ li {
 }
 
 .piece .watercolor,
-.piece .oil {
+.piece .oilcolor {
   width: 30%;
   height: 31.25rem;
   display: flex;
@@ -289,37 +290,37 @@ li {
 }
 
 .piece .watercolor .sub-title,
-.piece .oil .sub-title {
+.piece .oilcolor .sub-title {
   padding: 2rem;
   font-family: 'Lobster', 'sans-serif';
   font-size: 1.5rem;
 }
 
 .piece .watercolor .img-box img,
-.piece .oil .img-box img {
+.piece .oilcolor .img-box img {
   box-shadow: 5px 5px 10px var(--color-gray);
   transition: 0.3s;
 }
 
 .piece .watercolor .img-box img:hover,
-.piece .oil .img-box img:hover {
+.piece .oilcolor .img-box img:hover {
   transform: scale(1.1);
 }
 
 .piece .watercolor .text,
-.piece .oil .text {
+.piece .oilcolor .text {
   height: 9.375rem;
   padding: 2rem 0;
   word-break: break-all;
 }
 
 .piece .watercolor .text span:nth-child(1),
-.piece .oil .text span:nth-child(1) {
+.piece .oilcolor .text span:nth-child(1) {
   display: block;
 }
 
 .piece .watercolor .text span:nth-child(2),
-.piece .oil .text span:nth-child(2) {
+.piece .oilcolor .text span:nth-child(2) {
   display: none;
 }
 
@@ -600,22 +601,22 @@ li {
   }
 
   .piece .watercolor,
-  .piece .oil{
+  .piece .oilcolor{
     padding-top: 5rem;
   }
 
   .piece .watercolor .text,
-  .piece .oil .text {
+  .piece .oilcolor .text {
     padding: 1.5rem 0;
   }
 
   .piece .watercolor .text span:nth-child(1),
-  .piece .oil .text span:nth-child(1) {
+  .piece .oilcolor .text span:nth-child(1) {
     display: none;
   }
 
   .piece .watercolor .text span:nth-child(2),
-  .piece .oil .text span:nth-child(2){
+  .piece .oilcolor .text span:nth-child(2){
     display: block;
   }
 
