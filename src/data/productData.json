@@ -1,0 +1,134 @@
+[
+        {
+            "image": "../images/oilcolor_flower.jpg",
+            "title": "Flower",
+            "producer": "Anna Vidovich",
+            "type": "Oilcolor",
+            "size": "90 x 60 x 20 (cm)",
+            "price": "250,000 ₩"
+        },
+        {
+            "image": "../images/oilcolor_chattanooga.jpg",
+            "title": "Chattanooga",
+            "producer": "Michael Kevin",
+            "type": "Oilcolor",
+            "size": "120 x 60 x 20 (cm)",
+            "price": "300,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_girl.jpg",
+            "title": "Girl",
+            "producer": "Choi Seo-Hwan",
+            "type": "Watercolor",
+            "size": "120 x 60 x 15 (cm)",
+            "price": "120,000 ₩"
+        },
+        {
+            "image": "../images/oilcolor_lake.jpg",
+            "title": "Lake of Portland",
+            "producer": "Yngwie Malmsteen",
+            "type": "Oilcolor",
+            "size": "140 x 60 x 40 (cm)",
+            "price": "730,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_hummingbird.jpg",
+            "title": "Hummingbird",
+            "producer": "Michael Schenker",
+            "type": "Watercolor",
+            "size": "120 x 60 x 15 (cm)",
+            "price": "350,000 ₩"
+        },
+        {
+            "image": "../images/oilcolor-bridge.jpg",
+            "title": "Bridge ",
+            "producer": "Kim Grimm",
+            "type": "Oilcolor",
+            "size": "160 x 80 x 20 (cm)",
+            "price": "500,000 ₩"
+        },
+        
+        {
+            "image": "./images/oilcolor_city.jpg",
+            "title": "City",
+            "producer": "Kim Grimm",
+            "type": "Oilcolor",
+            "size": "160 x 80 x 20 (cm)",
+            "price": "320,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_lion.jpg",
+            "title": "Lion",
+            "producer": "Kazuhito Yamashita",
+            "type": "Watercolor",
+            "size": "120 x 60 x 15 (cm)",
+            "price": "233,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_bicycle.jpg",
+            "title": "Bicycle",
+            "producer": "John Towner Williams",
+            "type": "Watercolor",
+            "size": "100 x 50 x 10 (cm)",
+            "price": "185,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_swan.jpg",
+            "title": "Swan",
+            "producer": "Jang Wook-jin",
+            "type": "Watercolor",
+            "size": "90 x 60 x 20 (cm)",
+            "price": "250,000 ₩"
+        },
+        {
+            "image": "../images/oilcolor_eagle.jpg",
+            "title": "A flying Eagle",
+            "producer": "Julian Bream",
+            "type": "Oilcolor",
+            "size": "120 x 60 x 15 (cm)",
+            "price": "600,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_castle.jpg",
+            "title": "Castle in the Woods",
+            "producer": "Vincent Van Halen",
+            "type": "Watercolor",
+            "size": "90 x 60 x 20 (cm)",
+            "price": "200,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_cat.jpg",
+            "title": "Cat",
+            "producer": "Anna Vidovich",
+            "type": "Watercolor",
+            "size": "90 x 60 x 20 (cm)",
+            "price": "150,000 ₩"
+        },
+        
+        
+        {
+            "image": "../images/oilcolor_lighthouse.jpg",
+            "title": "Lighthouse",
+            "producer": "Kim Grimm",
+            "type": "Oilcolor",
+            "size": "90 x 60 x 20 (cm) ",
+            "price": "330,000 ₩"
+        },
+        {
+            "image": "../images/oilcolor_woman.jpg",
+            "title": "Woman on a Hill",
+            "producer": "Julian Bream",
+            "type": "Oilcolor",
+            "size": "90 x 60 x 20 (cm) ",
+            "price": "361,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_town.jpg",
+            "title": "Hometown",
+            "producer": "Narciso Yepes",
+            "type": "Watercolor",
+            "size": "80 x 45 x 15 (cm)",
+            "price": "169,000 ₩"
+        }
+]
+

@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import bannerWaterColor from '../images/banner_watercolor.jpg';
-import bannerOil from '../images/banner_oilcolor.jpg';
 
 function Piece() {
     return (
@@ -11,7 +9,7 @@ function Piece() {
               <article className="watercolor">
                 <h3 className="sub-title">Watercolor</h3>
                 <div className="img-box">
-                  <img src={bannerWaterColor} alt="banner_watercolor" />
+                  <img src={process.env.PUBLIC_URL + '/images/banner_watercolor.jpg'} alt="banner_watercolor" />
                 </div>
                 <p className="text">
                   <span>Watercolor is a type of paint that you can use to solve in water, or you can paint with it, so look at a variety of watercolors.</span>
@@ -22,7 +20,7 @@ function Piece() {
               <article className="oilcolor">
                 <h3 className="sub-title">Oilcolor</h3>
                 <div className="img-box">
-                  <img src={bannerOil} alt="banner_oilcolor" />
+                  <img src={process.env.PUBLIC_URL + '/images/banner_oilcolor.jpg'} alt="banner_oilcolor" />
                 </div>
                 <p className="text">
                   <span>It is a method loved by artists even today because it can be painted using oil-based paint, painted several times, and expressed using a unique texture of paint.</span>

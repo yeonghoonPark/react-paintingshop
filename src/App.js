@@ -48,6 +48,8 @@ function App() {
     window.scrollTo({ top: 0 });
   }
 
+  
+
   return (
     <div className="App">
       <BrowserRouter>

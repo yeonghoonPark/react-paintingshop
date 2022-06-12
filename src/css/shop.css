@@ -47,55 +47,115 @@
     border-bottom: 2px solid var(--color-black);
 }
 
-.product .nav{
+.product .buttons{
     margin: 1rem 0;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-.product .nav span{
+.product .buttons span{
     width: 33.3333333%;
     padding: 1rem;
     border: 1px solid var(--color-black);
+    font-family: 'Lobster', 'sans-serif';
+    font-size: 1.5rem;
     cursor: pointer;
     transition: var(--animation-duration);
 }
 
-.product .nav span:hover {
+.product .buttons span:hover {
     background: var(--color-black);
     color: var(--color-white);
 }
 
-.product .nav span:nth-child(1),
-.product .nav span:nth-child(2){
+.product .buttons span:nth-child(1),
+.product .buttons span:nth-child(2){
     border-right: none;
 }
 
 .items{
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
 .item{
-    width: 30%;
-    border: 1px solid transparent;
-    transition: var(--animation-duration);
+    width: 26%;
+    margin: 2rem 0;
 }
 
-.item:hover{
-    border: 1px solid var(--color-black);
+.item .img-box{
+    margin-bottom: 1rem;
+}
+
+.item .img-box img{
+    box-shadow: 5px 5px 10px var(--color-gray);
+    transition: var(--animation-duration);
+}
+.item .img-box img:hover{
+    transform: scale(1.1);
 }
 
 .item .contents{
-    
     padding: 0.5rem 1rem;
 }
 
 .item .contents span{
     display: block;
+    padding: 0.2rem 0;
+}
+
+.item .contents .item-title{
+    font-family: 'Lobster', 'sans-serif';
+    font-size: 2rem;
+}
+
+.item .contents .item-type,
+.item .contents .item-size {
+    font-size: 0.8rem;
+    color: var(--color-gray);
+}
+
+.item .icon {
+    padding: 0.8rem 0;
+    display: flex;
+}
+
+.item .icon i{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-light-grey);
+    cursor: pointer;
+    transition: var(--animation-duration);
+}
+
+.item .icon i:nth-child(1):hover{
+    color: var(--color-red);
+}
+
+.item .icon i:nth-child(2):hover {
+    color: var(--color-blue);
+}
+
+.item .icon button{
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid var(--color-black);
+    border-radius: 0;
+    background: var(--color-white);
+    cursor: pointer;
+    transition: var(--animation-duration);
+}
+
+.item .icon button:hover {
+    
+    
+    
+    
+    background: var(--color-black);
+    color: var(--color-white);
 }
 
 
