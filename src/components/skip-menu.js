@@ -1,6 +1,6 @@
 import React from "react";
 
-function SkipMemu() {
+export function SkipMemuMain() {
     return (
         <div className="skip-menu">
           <div className="container">
@@ -14,4 +14,16 @@ function SkipMemu() {
     );
 }
 
-export default SkipMemu;
+export function SkipMemuShop() {
+    return (
+        <div className="skip-menu">
+          <div className="container">
+            <a href="#header"><span>HEADER</span></a>
+            <a href="#slider"><span>SLIDER</span></a>
+            <a href="#"><span>본문</span></a>
+          </div>
+        </div>
+    );
+}
+
+export default { SkipMemuMain, SkipMemuShop };
