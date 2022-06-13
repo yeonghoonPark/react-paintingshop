@@ -24,7 +24,7 @@ function Piece() {
                 </div>
                 <p className="text">
                   <span>It is a method loved by artists even today because it can be painted using oil-based paint, painted several times, and expressed using a unique texture of paint.</span>
-                  <span>We're offering a 30% discount on Oil paintings, so don't miss this opportunity</span>
+                  <span>We have a new Oil painting in stock, so don't miss this opportunity.</span>
                 </p>
                 <button className="btn btn-oilcolor"><Link to="/"><span>Enjoying Oilcolor</span></Link></button>
               </article>

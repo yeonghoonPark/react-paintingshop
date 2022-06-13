@@ -25,7 +25,7 @@
         },
         {
             "image": "../images/oilcolor_lake.jpg",
-            "title": "Lake of Portland",
+            "title": "Lake",
             "producer": "Yngwie Malmsteen",
             "type": "Oilcolor",
             "size": "140 x 60 x 40 (cm)",
@@ -41,7 +41,7 @@
         },
         {
             "image": "../images/oilcolor-bridge.jpg",
-            "title": "Bridge ",
+            "title": "Bridge",
             "producer": "Kim Grimm",
             "type": "Oilcolor",
             "size": "160 x 80 x 20 (cm)",
@@ -82,7 +82,7 @@
         },
         {
             "image": "../images/oilcolor_eagle.jpg",
-            "title": "A flying Eagle",
+            "title": "Eagle",
             "producer": "Julian Bream",
             "type": "Oilcolor",
             "size": "120 x 60 x 15 (cm)",
@@ -90,7 +90,7 @@
         },
         {
             "image": "../images/watercolor_castle.jpg",
-            "title": "Castle in the Woods",
+            "title": "Castle",
             "producer": "Vincent Van Halen",
             "type": "Watercolor",
             "size": "90 x 60 x 20 (cm)",
@@ -116,7 +116,7 @@
         },
         {
             "image": "../images/oilcolor_woman.jpg",
-            "title": "Woman on a Hill",
+            "title": "Woman",
             "producer": "Julian Bream",
             "type": "Oilcolor",
             "size": "90 x 60 x 20 (cm) ",

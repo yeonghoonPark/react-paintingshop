@@ -6,7 +6,7 @@ function Slider() {
             <div className="container">
                 <h2 className="title">SLIDER</h2>
                 <div className="slide slide1">
-                <h3 className="sub-title">30% discount on Oil painting</h3>
+                <h3 className="sub-title">New Oil paintings are in stock!!</h3>
                 <div className="img-box">
                     <img src={process.env.PUBLIC_URL + '/images/slide01.jpg'} alt="slide01" />
                 </div>

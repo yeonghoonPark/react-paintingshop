@@ -47,7 +47,7 @@ function Shop(props) {
                     <nav className="buttons">
                         <span className="all">All</span>
                         <span className="watercolor" data-key="type" data-value="Watercolor">Watercolor</span>
-                        <span className="" data-key="type" data-value="Oilcolor">Oilcolor</span>
+                        <span className="oilcolor" data-key="type" data-value="Oilcolor">Oilcolor</span>
                     </nav>
                     <article className="items">
                         {newProductData}
