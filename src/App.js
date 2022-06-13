@@ -7,7 +7,7 @@ import Shop from './shop';
 
 function App() {
   let [zeroCount, setZeroCount] = useState(0);
-  
+
   let slideMovement = () => {
     setInterval(() => {
       let slide = document.querySelectorAll('.slide');
@@ -21,7 +21,7 @@ function App() {
     }, 8000);
   }
   slideMovement();
-  
+
   let toggleActive = (event) => {
     event.currentTarget.classList.toggle('active');
   }
@@ -33,7 +33,7 @@ function App() {
   }
 
   let pageYOffsetScroll = () => {
-     window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
       let toTop = document.querySelector('.to-top');
       if (window.pageYOffset <= 0 || window.pageYOffset <= 700) {
         toTop.classList.remove('active');
@@ -43,19 +43,17 @@ function App() {
     });
   }
   pageYOffsetScroll();
- 
+
   let toTop = () => {
     window.scrollTo({ top: 0 });
   }
-
-  
 
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main navTmCall={navTmCall} toTop={toTop} />} />
-          <Route path="/shop" element={<Shop navTmCall={navTmCall} toTop={ toTop } />} />
+          <Route path="/shop" element={<Shop navTmCall={navTmCall} toTop={toTop} />} />
         </Routes>
       </BrowserRouter>
     </div>

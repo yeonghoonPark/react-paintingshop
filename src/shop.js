@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import './css/shop.css';
-import { SkipMemuShop }  from './components/skip-menu';
+import { SkipMemuShop } from './components/skip-menu';
 import Header from './components/header';
 import Slider from './components/slider';
 import Footer from './components/footer';
@@ -8,8 +8,9 @@ import productData from './data/productData.json';
 
 function Shop(props) {
 
+    let [useProductData, setUseProductData] = useState(productData);
 
-    let newProductData = productData.map((item, index) => {
+    let newProductData = useProductData.map((item, index) => {
         return (
             <div className="item" key={index}>
                 <div className="img-box">
@@ -31,6 +32,19 @@ function Shop(props) {
         );
     })
 
+    let onButtonClick = (event) => {
+        let value = event.target.value;
+        if (value === 'all') {
+            let filteredAllcolor = productData.filter(item => item.type !== null);
+            setUseProductData(filteredAllcolor);
+        } else if (value === 'watercolor') {
+            let filteredWatercolor = productData.filter(item => item.type === 'Watercolor');
+            setUseProductData(filteredWatercolor);
+        } else if (value === 'oilcolor') {
+            let filteredOilcolor = productData.filter(item => item.type === 'Oilcolor');
+            setUseProductData(filteredOilcolor);
+        }
+    }
 
     return (
         <>
@@ -38,16 +52,13 @@ function Shop(props) {
             <Header navTmCall={props.navTmCall} toTop={props.toTop} />
             <Slider />
 
-
-
-
             <section className="product" id="product">
                 <div className="container">
                     <h2 className="title"><span>PRODUCT</span></h2>
                     <nav className="buttons">
-                        <span className="all">All</span>
-                        <span className="watercolor" data-key="type" data-value="Watercolor">Watercolor</span>
-                        <span className="oilcolor" data-key="type" data-value="Oilcolor">Oilcolor</span>
+                        <button className="all" value="all" onClick={onButtonClick}>All</button>
+                        <button className="watercolor" value="watercolor" onClick={onButtonClick}>Watercolor</button>
+                        <button className="oilcolor" value="oilcolor" onClick={onButtonClick}>Oilcolor</button>
                     </nav>
                     <article className="items">
                         {newProductData}
@@ -55,12 +66,7 @@ function Shop(props) {
                 </div>
             </section>
 
-            
-
-
-
-
-            <Footer toTop={props.toTop} /> 
+            <Footer toTop={props.toTop} />
         </>
     );
 }

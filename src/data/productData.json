@@ -8,6 +8,30 @@
             "price": "250,000 ₩"
         },
         {
+            "image": "../images/watercolor_castle.jpg",
+            "title": "Castle",
+            "producer": "Vincent Van Halen",
+            "type": "Watercolor",
+            "size": "90 x 60 x 20 (cm)",
+            "price": "200,000 ₩"
+        },
+        {
+            "image": "./images/oilcolor_city.jpg",
+            "title": "City",
+            "producer": "Kim Grimm",
+            "type": "Oilcolor",
+            "size": "160 x 80 x 20 (cm)",
+            "price": "320,000 ₩"
+        },
+        {
+            "image": "../images/watercolor_town.jpg",
+            "title": "Hometown",
+            "producer": "Narciso Yepes",
+            "type": "Watercolor",
+            "size": "80 x 45 x 15 (cm)",
+            "price": "169,000 ₩"
+        },
+        {
             "image": "../images/oilcolor_chattanooga.jpg",
             "title": "Chattanooga",
             "producer": "Michael Kevin",
@@ -40,21 +64,12 @@
             "price": "350,000 ₩"
         },
         {
-            "image": "../images/oilcolor-bridge.jpg",
+            "image": "../images/oilcolor_bridge.jpg",
             "title": "Bridge",
             "producer": "Kim Grimm",
             "type": "Oilcolor",
             "size": "160 x 80 x 20 (cm)",
             "price": "500,000 ₩"
-        },
-        
-        {
-            "image": "./images/oilcolor_city.jpg",
-            "title": "City",
-            "producer": "Kim Grimm",
-            "type": "Oilcolor",
-            "size": "160 x 80 x 20 (cm)",
-            "price": "320,000 ₩"
         },
         {
             "image": "../images/watercolor_lion.jpg",
@@ -89,14 +104,6 @@
             "price": "600,000 ₩"
         },
         {
-            "image": "../images/watercolor_castle.jpg",
-            "title": "Castle",
-            "producer": "Vincent Van Halen",
-            "type": "Watercolor",
-            "size": "90 x 60 x 20 (cm)",
-            "price": "200,000 ₩"
-        },
-        {
             "image": "../images/watercolor_cat.jpg",
             "title": "Cat",
             "producer": "Anna Vidovich",
@@ -104,8 +111,6 @@
             "size": "90 x 60 x 20 (cm)",
             "price": "150,000 ₩"
         },
-        
-        
         {
             "image": "../images/oilcolor_lighthouse.jpg",
             "title": "Lighthouse",
@@ -123,12 +128,20 @@
             "price": "361,000 ₩"
         },
         {
-            "image": "../images/watercolor_town.jpg",
-            "title": "Hometown",
-            "producer": "Narciso Yepes",
+            "image": "../images/watercolor_goldfish.jpg",
+            "title": "Goldfish",
+            "producer": "James tyler",
             "type": "Watercolor",
-            "size": "80 x 45 x 15 (cm)",
-            "price": "169,000 ₩"
+            "size": "100 x 80 x 15 (cm) ",
+            "price": "237,000 ₩"
+        },
+        {
+            "image": "../images/oilcolor_venice.jpg",
+            "title": "Venice",
+            "producer": "Leo Fender",
+            "type": "Oilcolor",
+            "size": "120 x 60 x 15 (cm) ",
+            "price": "421,000 ₩"
         }
+        
 ]
-
