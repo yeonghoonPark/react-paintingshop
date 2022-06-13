@@ -537,7 +537,7 @@ li {
 }
 
 
-/* 1024px */
+/* 769px ~ 1024px */
 @media screen and (max-width:64rem) {
   /* PIECE */
   .piece .btn{
@@ -545,7 +545,7 @@ li {
   }
 }
 
-/* 768px */
+/* 481px ~ 768px */
 @media screen and (max-width:48rem) {
   /* HEADER */
   .header .container{
@@ -661,7 +661,7 @@ li {
   }
 }
 
-/* 480px */
+/* 360px ~ 480px */
 @media screen and (max-width:30rem) {
   /* SLIDER */
   .slider .slide .sub-title{
