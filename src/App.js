@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Main from './main';
 import Shop from './shop';
 
@@ -36,14 +36,14 @@ function App() {
   pageYOffsetScroll();
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/shop" element={<Shop />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <HashRouter>
+      <div className="App">
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/shop" element={<Shop />} />
+          </Routes>
+      </div>
+    </HashRouter>
   );
 }
 
