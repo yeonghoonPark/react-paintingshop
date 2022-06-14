@@ -1,11 +1,12 @@
+import React, { useState } from "react";
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
 import Main from './main';
 import Shop from './shop';
 
 
 function App() {
+  
   let [zeroCount, setZeroCount] = useState(0);
 
   let slideMovement = () => {
@@ -22,16 +23,6 @@ function App() {
   }
   slideMovement();
 
-  let toggleActive = (event) => {
-    event.currentTarget.classList.toggle('active');
-  }
-
-  let navTmCall = (event) => {
-    let navTm = document.querySelector('.nav-tm');
-    navTm.classList.toggle('active');
-    toggleActive(event);
-  }
-
   let pageYOffsetScroll = () => {
     window.addEventListener('scroll', () => {
       let toTop = document.querySelector('.to-top');
@@ -44,16 +35,12 @@ function App() {
   }
   pageYOffsetScroll();
 
-  let toTop = () => {
-    window.scrollTo({ top: 0 });
-  }
-
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Main navTmCall={navTmCall} toTop={toTop} />} />
-          <Route path="/shop" element={<Shop navTmCall={navTmCall} toTop={toTop} />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/shop" element={<Shop />} />
         </Routes>
       </BrowserRouter>
     </div>

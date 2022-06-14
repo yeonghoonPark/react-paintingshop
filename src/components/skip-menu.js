@@ -20,7 +20,7 @@ export function SkipMemuShop() {
           <div className="container">
             <a href="#header"><span>HEADER</span></a>
             <a href="#slider"><span>SLIDER</span></a>
-            <a href="#"><span>본문</span></a>
+            <a href="#product"><span>PRODUCT</span></a>
           </div>
         </div>
     );

@@ -9,7 +9,7 @@ function Header(props) {
                 <nav className="nav">
                     <span><Link to="/">Home</Link></span>
                     <span><Link to="/shop">Shop</Link></span>
-                    <span><Link to="/notice">Notice</Link></span>
+                    {/* <span><Link to="/notice">Notice</Link></span> */}
                 </nav>
                 <div className="nav-btn" onClick={props.navTmCall}>
                     <div className="bar"></div>
@@ -19,7 +19,7 @@ function Header(props) {
                 <nav className="nav-tm">
                     <span><Link to="/">Home</Link></span>
                     <span><Link to="/shop">Shop</Link></span>
-                    <span><Link to="/notice">Notice</Link></span>
+                    {/* <span><Link to="/notice">Notice</Link></span> */}
                 </nav>
             </div>
         </header>

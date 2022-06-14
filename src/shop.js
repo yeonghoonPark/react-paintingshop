@@ -3,32 +3,32 @@ import './css/shop.css';
 import { SkipMemuShop } from './components/skip-menu';
 import Header from './components/header';
 import Slider from './components/slider';
+import Product from "./components/product";
+import Item from "./components/item";
 import Footer from './components/footer';
 import productData from './data/productData.json';
 
-function Shop(props) {
+function Shop() {
+
+    let toggleActive = (event) => {
+        event.currentTarget.classList.toggle('active');
+    }
+
+    let navTmCall = (event) => {
+        let navTm = document.querySelector('.nav-tm');
+        navTm.classList.toggle('active');
+        toggleActive(event);
+    }
+
+    let toTop = () => {
+        window.scrollTo({ top: 0 });
+    }
 
     let [useProductData, setUseProductData] = useState(productData);
 
-    let newProductData = useProductData.map((item, index) => {
+    let newProductData = useProductData.map((item) => {
         return (
-            <div className="item" key={index}>
-                <div className="img-box">
-                    <img src={item.image} alt={item.title} />
-                </div>
-                <div className="contents">
-                    <span className="item-title">{item.title}</span>
-                    <span className="item-producer">{item.producer}</span>
-                    <span className="item-type">{item.type}</span>
-                    <span className="item-size">{item.size}</span>
-                    <span className="item-price">{item.price}</span>
-                </div>
-                <div className="icon">
-                    <i className="fa-solid fa-heart"></i>
-                    <i className="fa-solid fa-cart-shopping"></i>
-                    <button>Purchase</button>
-                </div>
-            </div>
+            <Item item={item} key={item.id} />
         );
     })
 
@@ -49,24 +49,10 @@ function Shop(props) {
     return (
         <>
             <SkipMemuShop />
-            <Header navTmCall={props.navTmCall} toTop={props.toTop} />
+            <Header navTmCall={navTmCall} toTop={toTop} />
             <Slider />
-
-            <section className="product" id="product">
-                <div className="container">
-                    <h2 className="title"><span>PRODUCT</span></h2>
-                    <nav className="buttons">
-                        <button className="all" value="all" onClick={onButtonClick}>All</button>
-                        <button className="watercolor" value="watercolor" onClick={onButtonClick}>Watercolor</button>
-                        <button className="oilcolor" value="oilcolor" onClick={onButtonClick}>Oilcolor</button>
-                    </nav>
-                    <article className="items">
-                        {newProductData}
-                    </article>
-                </div>
-            </section>
-
-            <Footer toTop={props.toTop} />
+            <Product newProductData={newProductData} onButtonClick={onButtonClick} />
+            <Footer toTop={toTop} />
         </>
     );
 }
