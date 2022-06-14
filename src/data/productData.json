@@ -1,7 +1,7 @@
 [
         {
             "id": "0",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_flower.jpg",
+            "image": "/images/oilcolor_flower.jpg",
             "title": "Flower",
             "producer": "Anna Vidovich",
             "type": "Oilcolor",
@@ -10,7 +10,7 @@
         },
         {
             "id": "1",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_castle.jpg",
+            "image": "/images/watercolor_castle.jpg",
             "title": "Castle",
             "producer": "Vincent Van Halen",
             "type": "Watercolor",
@@ -19,7 +19,7 @@
         },
         {
             "id": "2",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_city.jpg",
+            "image": "/images/oilcolor_city.jpg",
             "title": "City",
             "producer": "Kim Grimm",
             "type": "Oilcolor",
@@ -28,7 +28,7 @@
         },
         {
             "id": "3",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_town.jpg",
+            "image": "/images/watercolor_town.jpg",
             "title": "Hometown",
             "producer": "Narciso Yepes",
             "type": "Watercolor",
@@ -37,7 +37,7 @@
         },
         {
             "id": "4",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_chattanooga.jpg",
+            "image": "/images/oilcolor_chattanooga.jpg",
             "title": "Chattanooga",
             "producer": "Michael Kevin",
             "type": "Oilcolor",
@@ -46,7 +46,7 @@
         },
         {
             "id": "5",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_girl.jpg",
+            "image": "/images/watercolor_girl.jpg",
             "title": "Girl",
             "producer": "Choi Seo-Hwan",
             "type": "Watercolor",
@@ -55,7 +55,7 @@
         },
         {
             "id": "6",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_lake.jpg",
+            "image": "/images/oilcolor_lake.jpg",
             "title": "Lake",
             "producer": "Yngwie Malmsteen",
             "type": "Oilcolor",
@@ -64,7 +64,7 @@
         },
         {
             "id": "7",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_hummingbird.jpg",
+            "image": "/images/watercolor_hummingbird.jpg",
             "title": "Hummingbird",
             "producer": "Michael Schenker",
             "type": "Watercolor",
@@ -73,7 +73,7 @@
         },
         {
             "id": "8",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_bridge.jpg",
+            "image": "/images/oilcolor_bridge.jpg",
             "title": "Bridge",
             "producer": "Kim Grimm",
             "type": "Oilcolor",
@@ -82,7 +82,7 @@
         },
         {
             "id": "9",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_lion.jpg",
+            "image": "/images/watercolor_lion.jpg",
             "title": "Lion",
             "producer": "Kazuhito Yamashita",
             "type": "Watercolor",
@@ -91,7 +91,7 @@
         },
         {
             "id": "10",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_bicycle.jpg",
+            "image": "/images/watercolor_bicycle.jpg",
             "title": "Bicycle",
             "producer": "John Towner Williams",
             "type": "Watercolor",
@@ -100,7 +100,7 @@
         },
         {
             "id": "11",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_swan.jpg",
+            "image": "/images/watercolor_swan.jpg",
             "title": "Swan",
             "producer": "Jang Wook-jin",
             "type": "Watercolor",
@@ -109,7 +109,7 @@
         },
         {
             "id": "12",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_eagle.jpg",
+            "image": "/images/oilcolor_eagle.jpg",
             "title": "Eagle",
             "producer": "Julian Bream",
             "type": "Oilcolor",
@@ -118,7 +118,7 @@
         },
         {
             "id": "13",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_cat.jpg",
+            "image": "/images/watercolor_cat.jpg",
             "title": "Cat",
             "producer": "Anna Vidovich",
             "type": "Watercolor",
@@ -127,7 +127,7 @@
         },
         {
             "id": "14",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_lighthouse.jpg",
+            "image": "/images/oilcolor_lighthouse.jpg",
             "title": "Lighthouse",
             "producer": "Kim Grimm",
             "type": "Oilcolor",
@@ -136,7 +136,7 @@
         },
         {
             "id": "15",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_woman.jpg",
+            "image": "/images/oilcolor_woman.jpg",
             "title": "Woman",
             "producer": "Julian Bream",
             "type": "Oilcolor",
@@ -145,7 +145,7 @@
         },
         {
             "id": "16",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/watercolor_goldfish.jpg",
+            "image": "/images/watercolor_goldfish.jpg",
             "title": "Goldfish",
             "producer": "James tyler",
             "type": "Watercolor",
@@ -154,7 +154,7 @@
         },
         {
             "id": "17",
-            "image": "https://yeonghoonpark.github.io/react-paintingshop/images/oilcolor_venice.jpg",
+            "image": "/images/oilcolor_venice.jpg",
             "title": "Venice",
             "producer": "Leo Fender",
             "type": "Oilcolor",

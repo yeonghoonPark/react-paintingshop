@@ -36,7 +36,7 @@ function App() {
   pageYOffsetScroll();
 
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
           <Routes>
             <Route path="/" element={<Main />} />
