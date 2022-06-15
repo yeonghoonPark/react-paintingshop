@@ -1,6 +1,6 @@
 import React from "react";
 import './css/main.css';
-import { SkipMemuMain }  from './components/skip-menu';
+import SkipMemu from './components/skip-menu';
 import Header from './components/header';
 import Slider from './components/slider';
 import Piece from './components/piece';
@@ -25,7 +25,7 @@ function Main() {
   }
     return (
         <>
-          <SkipMemuMain />
+          <SkipMemu />
           <Header navTmCall={navTmCall} toTop={ toTop } />
           <Slider />
           <Piece />

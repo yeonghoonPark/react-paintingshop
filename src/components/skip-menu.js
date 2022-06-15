@@ -1,29 +1,15 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-export function SkipMemuMain() {
+export function SkipMemu() {
     return (
         <div className="skip-menu">
           <div className="container">
-            <a href="#header"><span>HEADER</span></a>
-            <a href="#slider"><span>SLIDER</span></a>
-            <a href="#piece"><span>PIECE</span></a>
-            <a href="#academy"><span>ACADEMY</span></a>
-            <a href="#contact-us"><span>CONTACT-US</span></a>
+            <Link to="/"><span>Main</span></Link>
+            <Link to="/shop"><span>Shop</span></Link>
           </div>
         </div>
     );
 }
 
-export function SkipMemuShop() {
-    return (
-        <div className="skip-menu">
-          <div className="container">
-            <a href="#header"><span>HEADER</span></a>
-            <a href="#slider"><span>SLIDER</span></a>
-            <a href="#product"><span>PRODUCT</span></a>
-          </div>
-        </div>
-    );
-}
-
-export default { SkipMemuMain, SkipMemuShop };
+export default SkipMemu;

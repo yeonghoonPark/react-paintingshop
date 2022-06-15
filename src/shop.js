@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './css/shop.css';
-import { SkipMemuShop } from './components/skip-menu';
+import SkipMemu from './components/skip-menu';
 import Header from './components/header';
 import Slider from './components/slider';
 import Product from "./components/product";
@@ -48,7 +48,7 @@ function Shop() {
 
     return (
         <>
-            <SkipMemuShop />
+            <SkipMemu />
             <Header navTmCall={navTmCall} toTop={toTop} />
             <Slider />
             <Product newProductData={newProductData} onButtonClick={onButtonClick} />
